@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-@pytest.fixture
+@pytest.fixture()
 def setUp():
         s = Service("D:\Soft\Python_Selenium\Browser\chromedriver.exe")
         self.driver = webdriver.Chrome(service=s)
